@@ -26,7 +26,9 @@ module.exports = {
             .setColor("#"+((1<<24)*Math.random()|0).toString(16))
             
     
-            message.channel.send(clearEmbed);
+            message.channel.send(clearEmbed).then((messages) => {
+                messages.delete({ timeout: 10000 })
+            });
 
     }
 }
