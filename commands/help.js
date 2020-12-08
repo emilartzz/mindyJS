@@ -19,7 +19,7 @@ module.exports = {
                 { name: '\u200B', value: '\u200B' },
                 { name: '\`Admin commands 🠗\`', value: 'admins only', inline: true },
                 { name: '\u200B', value: '\u200B' },
-                { name: 'Placeholder', value: 'Some values here', inline: true },
+                { name: 'reload {command}', value: 'Reloads the \nspecified command.', inline: true },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
                 { name: '\u200B', value: '\u200B' },
