@@ -12,7 +12,7 @@ module.exports = {
         if (amount > 100) return message.reply("You cannot clear more than 100 messages at once");
         if (amount < 1) return message.reply("You must specify an amount between 1-100");
 
-        message.channel.messages.fetch((limit: amount)).then(messages => {
+        message.channel.messages.fetch({limit: amount}).then(messages => {
             message.channel.bulkDelete(messages)
         });
 
