@@ -16,7 +16,17 @@ module.exports = {
             message.channel.bulkDelete(messages)
         });
 
-        message.channel.send('\` Deleted' + amount + ' message\´');
+        var clearEmbed = new Discord.MessageEmbed()
+            .setTitle(`Cleared messages`)
+            .addFields(
+                { name: 'Success!', value: '\`Cleared a total of ' + amount + ' messages\`', inline: true },
+            )
+            .setTimestamp()
+            .setFooter('Made by Emil Warelius', client.user.avatarURL())
+            .setColor("#"+((1<<24)*Math.random()|0).toString(16))
+            
+    
+            message.channel.send(clearEmbed);
 
     }
 }
