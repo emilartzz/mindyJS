@@ -20,7 +20,7 @@ module.exports = {
                 { name: '\`Admin commands 🠗\`', value: 'admins only', inline: true },
                 { name: '\u200B', value: '\u200B' },
                 { name: 'reload {command}', value: 'Reloads the \nspecified command.', inline: true },
-                { name: 'clear {amount}', value: 'Clears the specified amount [ 1-100 ]', inline: true },
+                { name: 'clear {amount}', value: 'Clears the specified \namount [ 1-100 ]', inline: true },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
                 { name: '\u200B', value: '\u200B' },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
