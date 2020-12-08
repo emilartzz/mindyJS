@@ -7,7 +7,7 @@ module.exports = {
         const amount = args.join(' ');
 
         if (!amount) return message.reply("You have to specify an amount of messages to delete.");
-        if (isNaN(amount)) return msg.reply('The amount parameter isn`t a number!');
+        if (isNaN(amount)) return message.reply('The amount parameter isn`t a number!');
 
     }
 }
