@@ -14,12 +14,11 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log(client.user.username + " is now online!");
-    client.user.setActivity(`[${membersCount}] members in here raging | Use *help to see all commands`, {type: "WATCHING"});
 
     setInterval(() => {
         let membersCount = client.guilds.cache.map(guild => guild.memberCount).reduce((a, b) => a + b, 0)
         client.user.setActivity(`[${membersCount}] members in here raging | Use *help to see all commands`, {type: "WATCHING"});
-    }, 1000 * 60 * 30);
+    }, 1000 * 60);
 
 });
 
