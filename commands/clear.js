@@ -4,6 +4,8 @@ module.exports = {
     aliases: ['clears', 'delete'],
     execute(Discord, client, message, args) {
 
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply("You do not have the required permissions.");
+
         const amount = args.join(' ');
 
         if (!amount) return message.reply("You have to specify an amount of messages to delete.");
@@ -26,9 +28,7 @@ module.exports = {
             .setColor("#"+((1<<24)*Math.random()|0).toString(16))
             
     
-            message.channel.send(clearEmbed).then((messages) => {
-                messages.delete({ timeout: 10000 })
-            });
+            message.channel.send(clearEmbed);
 
     }
 }
