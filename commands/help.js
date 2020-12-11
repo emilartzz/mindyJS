@@ -11,7 +11,7 @@ module.exports = {
             .addFields(
                 { name: 'help', value: 'Use this to see all \navailable commands \n Aliases: \`help\`, \`cmd\`, \`cmds\`', inline: true },
                 { name: 'ping', value: 'Returns the \ncurrent ping.', inline: true },
-                { name: 'Placeholder', value: 'Some value here', inline: true },
+                { name: 'uptime', value: 'Displays the \ncurrent uptime', inline: true },
                 { name: '\u200B', value: '\u200B' },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
                 { name: 'Placeholder', value: 'Some value here', inline: true },
