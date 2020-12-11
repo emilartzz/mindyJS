@@ -14,7 +14,6 @@ module.exports = {
         let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
 
         var sendUptime = new Discord.MessageEmbed()
-            .setTitle(`Current uptime!`)
             .setAuthor('MindyBOT', client.user.avatarURL())
             .addFields(
                 { name: 'Uptime:', value: `Current uptime : ${uptime}`, inline: true },
